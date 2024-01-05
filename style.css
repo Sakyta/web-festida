@@ -1,3 +1,7 @@
+:root {
+    --green : #7AFF80;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 * {
@@ -15,7 +19,7 @@ body {
     align-items: center;
 }
 
-.section-2 {
+.section-1, .section-2 {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -284,11 +288,11 @@ input {
 }
 
 .quote-box .icon {
-    font-size: 300px;
+    font-size: 200px;
     display: flex;       
     justify-content: center;
     align-items: center;
-    margin: 20px 0 -100px 50px;    
+    margin: 20px 0 -60px 50px;    
     z-index: 1;
     padding: 0;
     text-align: center;
@@ -342,7 +346,7 @@ input {
 
 .heading-2 {
     font-size: 36px;
-    font-weight: 800;
+    font-weight: 600;    
     text-align: center;  
     position: relative;  
     display: block;
@@ -418,6 +422,73 @@ input {
     font-size: 24px;
 }
 
+.section-1 .cage {    
+    display: flex;    
+    justify-content: end;
+}
+
+.section-1 .heading-2 {
+    margin: 0;
+}
+
+.poin .content {
+    flex-direction: column;  
+    justify-content: start;  
+    align-items: start;
+}
+
+.poin .content .arabic {
+    width: 100%;
+    align-items: end;
+    justify-content: end;
+    text-align: end;
+    display: flex;
+}
+
+.poin .content .arti {
+    font-size: 16px;    
+    text-align: justify;
+}
+
+.poin .angka {
+    width: 100%;
+    height: 50px;
+    font-size: 128px;
+    font-weight: 800;
+    display: flex;
+    justify-content: start;
+    align-items: center;        
+    color: #7AFF80;
+}
+
+.poin .card {
+    flex-direction: row;    
+    position: relative;
+    height: auto;
+    width: 100%;    
+    max-width: 50em;  
+    justify-content: start;
+    padding: 3em;
+}
+
+.poin .icon {
+    min-width: 100px;
+    height: 100px;
+}
+
+.poin {
+    width: 100%;
+}
+
+.even {    
+    display: inline-block;
+}
+
+.poin.even {    
+    margin-left: 40em;
+    width: auto;
+}
+
 @media only screen and (max-width: 768px) {
     .content {
         flex-direction: column;
@@ -477,6 +548,37 @@ input {
 
     .quote-box .icon {
         font-size: 200px;
-        margin: 20px 0 -70px 30px;
+        margin: 20px 0 -50px 30px;
+    }
+
+    .poin.even {
+        margin-left: 0;        
+        width: 100%;
+    }
+
+    .poin {
+        width: auto;
+    }
+
+    .poin .card {
+        padding: 1em;
+        width: auto;
+        max-width: none;
+    }
+
+    .poin .icon {
+        width: 50px;
+        min-width: 50px;
+        height: 50px;        
+    }
+
+    .poin .icon img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .poin .content .arabic {
+        margin: 0;
+        padding: 10px;
     }
 }
