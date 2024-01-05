@@ -15,6 +15,16 @@ body {
     align-items: center;
 }
 
+.section-2 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 2em;
+}
+
 .section-4 {    
     width: 80%;
     height: auto;
@@ -250,6 +260,164 @@ input {
     fill: black;
 }
 
+.quote-box .content {
+    border-radius: 21px;
+    border: 1px solid #FFE8C8;
+    background: #FFF;    
+    padding: 1em 3em;
+    margin: 0;       
+}
+
+.quote-box:hover {
+    z-index: 1;
+    transform: scale(1.15);
+    box-shadow: 0px 4px 42.6px 0px rgba(255, 232, 200, 0.44);
+}
+
+.quote-box .arabic {
+    font-size: 32px;
+}
+
+.quote-box .arti {
+    font-size: 16px;
+    max-width: 70em;
+}
+
+.quote-box .icon {
+    font-size: 300px;
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 -100px 50px;    
+    z-index: 1;
+    padding: 0;
+    text-align: center;
+    width: 57px;
+    height: 50px;
+    line-height: 140%;
+    font-weight: 800;
+}
+
+.section-2 .quotes {
+    font-size: 54px;
+    text-align: center;
+    max-width: 12em;
+    font-weight: 300;
+}
+
+.cage {
+    width: 100%;
+}
+
+.heading {
+    text-transform: uppercase;
+    text-align: start;
+    font-size: 64px;
+    font-weight: 600;    
+    align-items: start;
+    max-width: 3em;
+    line-height: 92%;
+}
+
+.cage .desc {
+    font-size: 20px;
+    max-width: 600px;
+}
+
+.quote-box {
+    display: flex;
+    flex-direction: column;
+    margin: 5em;
+    width: 100%;
+    transition: all 1s;
+    border-radius: 21px;
+}
+
+.showcase {
+    display: flex;  
+    width: 100%;
+    max-width: 1170px;  
+    gap: 40px;
+}
+
+.heading-2 {
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;  
+    position: relative;  
+    display: block;
+    width: fit-content;
+    margin-top: -2em;
+}
+
+.heading-2::after {
+    content: "";
+    width: 50%;    
+    height: 2px;    
+    background-color: #7AFF80;
+    position: absolute;
+    left: 25%;    
+    bottom: -4px;
+}
+
+.heading-2 + .kutipan .arabic {
+    font-size: 36px;
+}
+
+.heading-2 + .kutipan .arti {
+    font-size: 20px;
+}
+
+.card {
+    border-radius: 50px;
+    background: var(--ffffff, #FFF);        
+    box-shadow: 0px 50px 80px -30px rgba(151, 109, 0, 0.20);
+    width: 100%;
+    height: 20em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    gap: 1em;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.card:hover {
+    z-index: 1;
+    transform: scale(1.15);
+    box-shadow: -4px 4px 60px 18px rgba(0, 151, 40, 0.44);
+    -webkit-box-shadow: -4px 4px 60px 18px rgba(0, 151, 40, 0.44);
+    -moz-box-shadow: -4px 4px 60px 18px rgba(0, 151, 40, 0.44);
+}
+
+.card .icon img {
+    width: 61px;
+    height: 61px;        
+}
+
+.card .icon {    
+    background-color: #7AFF80;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .desc {
+    display: flex;    
+    flex-direction: column;
+    text-align: start;
+    gap: 2px;
+}
+
+.card .judul-4 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
 @media only screen and (max-width: 768px) {
     .content {
         flex-direction: column;
@@ -295,5 +463,20 @@ input {
 
     .section-4 {
         height: auto;
+    }
+
+    .showcase {
+        display: grid;
+        width: auto;
+    }
+
+    .section-2 .quote-box .content {
+        width: auto;
+        min-width: 0;
+    }
+
+    .quote-box .icon {
+        font-size: 200px;
+        margin: 20px 0 -70px 30px;
     }
 }
