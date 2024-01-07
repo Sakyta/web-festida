@@ -7,4 +7,78 @@
 body {
     min-height: 100vh;
     background-color: #FFFFFF;
+    font-family: Manrope;
+}
+
+.makanan-title {
+    width: 200vh;
+    height: 10vh;
+    margin-bottom: 50px;
+    color: #585858;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 20.88px */
+}
+
+.makanan {
+    display: flex;
+    width: 200vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 57px;
+}
+
+.card {
+    width: 75%;
+    height: 50vh;
+    display: flex;
+    border: solid #ffdeaf 1px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 20px #ffdeaf;
+}
+
+.card-text {
+    width: 40%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: auto;
+}
+
+.card-title {
+    color: #585858;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%; /* 52.8px */
+}
+
+.card-desc {
+    color: #616161;
+    padding-left: 2vh;
+    width: 60%;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 25.2px */
+}
+
+.makanan button {
+    width: 100%;
+    height: 45px;
+    border-style: none;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 500;
+    background-color: #EDB668;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
 }
