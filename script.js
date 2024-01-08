@@ -56,3 +56,53 @@ function unrotate(button) {
 
     card.classList.remove("rotated");
 }
+
+var words = ["Bahagia", "Sehat", "Indah", "Sejahtera", "Sakinah", "Produktif"];
+var flag = 0;
+var text = runningTextElement;
+var speed = 250;
+
+function getRandomWords() {
+    var word = words[flag];
+
+    flag++;
+    if (flag == words.length) {
+        flag = 0;
+    }
+
+    return word;
+}
+
+function runningText() {
+    var word = getRandomWords();
+    var length = word.length;
+
+    for (var i = 0; i < length; i++) {
+        (function (i) {
+            setTimeout(function () {                
+                var oldText = text.textContent;
+                text.textContent = oldText + word[i];
+                if (i == length - 1) {
+                    setTimeout(removeWord, speed * i);
+                }
+            }, speed * i);
+        })(i);
+    }
+
+    function removeWord() {
+        for (var j = 0; j < length; j++) {
+            (function (j) {
+                setTimeout(function () {
+                    var oldText = text.textContent.slice(0, -1);
+                    text.textContent = oldText;
+
+                    if (j == length - 1) {
+                        setTimeout(runningText, speed * j);
+                    }
+                }, (speed * j) / 2);
+            })(j);
+        }
+    }
+}
+
+runningText();
