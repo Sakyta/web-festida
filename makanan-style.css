@@ -7,16 +7,15 @@
 body {
     min-height: 100vh;
     background-color: #FFFFFF;
-    font-family: Manrope;
+    font-family: Manrope, sans-serif;
 }
 
 .makanan-title {
-    width: 200vh;
     height: 10vh;
-    margin-bottom: 50px;
+    margin: 50px 0;
     color: #585858;
     text-align: center;
-    font-size: 36px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 600;
     line-height: 100%; /* 20.88px */
@@ -24,7 +23,6 @@ body {
 
 .makanan {
     display: flex;
-    width: 200vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -33,52 +31,107 @@ body {
 
 .card {
     width: 75%;
-    height: 50vh;
     display: flex;
-    border: solid #ffdeaf 1px;
+    /* border: solid #ffdeaf 1px; */
     border-radius: 10px;
-    box-shadow: 0px 1px 20px #ffdeaf;
+    box-shadow: 0px 1px 15px #ffdeaf;
+}
+
+.even{
+    flex-direction: row-reverse;
 }
 
 .card-text {
-    width: 40%;
     padding: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: auto;
+    gap: 20px;
+    width: 40%;
 }
 
 .card-title {
     color: #585858;
     font-size: 48px;
-    font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 110%; /* 52.8px */
 }
 
 .card-desc {
     color: #616161;
-    padding-left: 2vh;
-    width: 60%;
-    font-size: 18px;
-    font-style: normal;
+    width: 100%;
+    font-size: 22px;
     font-weight: 400;
     line-height: 140%; /* 25.2px */
 }
 
 .makanan button {
     width: 100%;
-    height: 45px;
+    padding: 20px 0;
     border-style: none;
     color: #ffffff;
-    font-style: normal;
+    font-size: 22px;
     font-weight: 500;
     background-color: #EDB668;
+    cursor: pointer;
+}
+
+.card-img{
+    width: 60%;
 }
 
 .card-img img{
     width: 100%;
     height: 100%;
-    border-radius: 9px;
+    border-radius: 0 9px 9px 0;
+}
+
+.even img{
+    border-radius: 9px 0 0 9px;
+}
+
+@media only screen and (max-width: 768px){
+    .makanan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:50px;
+    }
+
+    .makanan-title{
+        font-size: 36px;
+        margin: 50px 0;
+    }
+
+    .card{
+        width: 75%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .card-img img{
+        border-radius: 9px 9px 0 0;
+    }
+
+    .card-img{
+        width: 100%;
+    }
+
+    .card-text{
+        width: 80%;
+        padding: 30px 30px;
+    }
+    .card-desc{
+        font-size: 16px;
+    }
+
+    .card-title{
+        font-size: 36px;
+    }
+
+    .card button{
+        padding: 15px 0;
+        font-size: 16px;
+    }
 }
