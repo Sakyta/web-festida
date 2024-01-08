@@ -10,7 +10,7 @@ body {
 }
 
 .hero-box {
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     display: flex;
     height: 70vh;
     justify-content: space-between;

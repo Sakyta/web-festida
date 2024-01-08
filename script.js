@@ -44,3 +44,15 @@ function toggleMode()
         }, 1000);
     }
 }
+
+function rotated(button) {
+    var card = button.closest(".card");
+
+    card.classList.add("rotated");
+}
+
+function unrotate(button) {
+    var card = button.closest(".card");
+
+    card.classList.remove("rotated");
+}

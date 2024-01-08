@@ -1,5 +1,6 @@
 :root {
     --green : #7AFF80;
+    --white : #fff;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
@@ -13,13 +14,13 @@
 
 body {
     min-height: 100vh;
-    background-color: #A08B6B;
+    background-color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.section-1, .section-2 {
+.section-1, .section-2, .section-3 {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -489,6 +490,174 @@ input {
     width: auto;
 }
 
+.sepenggal {
+    max-width: 50em;
+}
+
+.section-3 .makanan-title {
+    height: 10vh;
+    margin: 50px 0;
+    color: #585858;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 20.88px */
+}
+
+.section-3 .makanan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.section-3 .card {
+    width: 65em;
+    display: flex;
+    /* border: solid #ffdeaf 1px; */
+    border-radius: 10px;    
+    height: 30em;
+    flex-direction: row;    
+    padding: 0;
+    gap: 0;
+    transform-style: preserve-3d;
+    position: relative; 
+    box-shadow: none; 
+    cursor: auto;
+}
+
+.section-3 .card-face {
+    backface-visibility: hidden;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    box-shadow: 0px 1px 15px #ffdeaf;
+}
+
+.section-3 .front {
+    width: 100%;
+}
+
+.section-3 .even .card-face.back {
+    flex-direction: column;
+}
+
+.section-3 .back {
+    background-color: var(--white);
+    transform: rotateY(180deg);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-3 .makanan .back button {
+    width: 10%;
+    padding: 5px;
+    margin-top: 1.5em;
+}
+
+.section-3 .card:hover {
+    z-index: 0;
+    transform: scaleX(1);    
+}
+
+.section-3 .card.rotated:hover {
+    transform: rotateY(180deg);
+}
+
+.rotated {
+    transform: rotateY(180deg);
+}
+
+.back ul {
+    font-size: 18px;
+    font-weight: 400;    
+    width: 85%;
+}
+
+.judul-2 {    
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%;        
+    margin-top: 15px;
+}
+
+.section-3 .content {
+    flex-direction: column;
+}
+
+.section-3 .even .card-face {
+    flex-direction: row-reverse;
+}
+
+.section-3 .card-text {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 40%;
+}
+
+.section-3 .card-title {
+    color: #585858;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 110%;
+    /* 52.8px */
+}
+
+.section-3 .card-desc {
+    color: #616161;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 140%;
+    /* 25.2px */
+}
+
+.section-3 .makanan button {
+    width: 100%;
+    padding: 20px 0;
+    border-style: none;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: #EDB668;
+    cursor: pointer;
+}
+
+.section-3 .card-img {
+    width: 60%;
+}
+
+.section-3 .card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 9px 9px 0;
+    object-fit: cover;
+}
+
+.section-3 .even img {
+    border-radius: 9px 0 0 9px;
+}
+
+.section-3 .heading {
+    max-width: 5em;
+}
+
+.section-3 .cage {
+    display: flex;
+    justify-content: end;
+}
+
 @media only screen and (max-width: 768px) {
     .content {
         flex-direction: column;
@@ -580,5 +749,71 @@ input {
     .poin .content .arabic {
         margin: 0;
         padding: 10px;
+    }
+
+    .section-3 .makanan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20vh;
+    }
+
+    .section-3 .makanan-title{
+        font-size: 36px;
+        margin: 50px 0;
+    }
+
+    .section-3 .card{
+        width: auto;
+    }
+
+    .section-3 .card-face {
+        width: 20em;
+    }
+
+    .section-3 .back {
+        overflow: auto;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .section-3 .makanan .back button {
+        width: 30%;
+    }
+
+    .section-3 .front {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .section-3 .card-img img{
+        border-radius: 9px 9px 0 0;
+    }
+
+    .section-3 .card-img{
+        width: 100%;
+    }
+
+    .section-3 .card-text{
+        width: 80%;
+        padding: 30px 0;
+    }
+
+    .section-3 .even .card-face {
+        flex-direction: column-reverse;
+    }
+
+    .section-3 .card-desc{
+        font-size: 16px;
+    }
+
+    .section-3 .card-title{
+        font-size: 36px;
+    }
+
+    .section-3 .card button{
+        padding: 15px 0;
+        font-size: 16px;
     }
 }
