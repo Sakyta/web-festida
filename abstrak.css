@@ -1,0 +1,110 @@
+:root {
+  --green: #7AFF80;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 200vh;
+  background-color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+}
+
+#abstrak {
+  background: linear-gradient(180deg, #FFF6EA 0%, rgba(255, 232, 199, 0.50) 100%);
+  padding: 120px 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+  align-items: center;
+}
+
+#abstrak img {
+  height: 100%;
+}
+
+.top,
+.bottom {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 6.25rem;
+  align-items: center;
+}
+
+.right,
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.right .judul,
+.left .judul {
+  font-size: 3rem;
+  color: #585858;
+  max-width: 553px;
+}
+
+.right .judul span,
+.left .judul span {
+  color: #EDB668;
+}
+
+.right p,
+.left p {
+  font-size: 1.2rem;
+  color: #828282;
+  line-height: 160%;
+}
+
+.dalil {
+  color: #6E5858;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.dalil span {
+  font-style: normal;
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-family: 'Amiri', serif;
+}
+
+.ca {
+  color: #6E5858;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #abstrak{
+    padding: 10vw;
+  }
+
+  .top,
+  .bottom {
+    width: 100%;
+    flex-direction: column;
+    gap: 4.375rem;
+  }
+
+  .bottom{
+    flex-direction: column-reverse;
+  }
+
+  img{
+    width: 100%;
+  }
+}
