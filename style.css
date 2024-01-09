@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
-:root {
-    --green : #7AFF80;
+:root {    
     --white : #fff;
+    --brown : #EDB668;
 }
 
 * {
@@ -66,6 +66,9 @@ body {
     width: 45%;
     margin: 2em 2.5%;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .arabic {
@@ -289,11 +292,11 @@ input {
 }
 
 .quote-box .icon {
-    font-size: 200px;
+    font-size: 300px;
     display: flex;       
     justify-content: center;
     align-items: center;
-    margin: 20px 0 -60px 50px;    
+    margin: 20px 0 -90px 50px;    
     z-index: 1;
     padding: 0;
     text-align: center;
@@ -301,6 +304,7 @@ input {
     height: 50px;
     line-height: 140%;
     font-weight: 800;
+    color: var(--brown);
 }
 
 .section-2 .quotes {
@@ -359,7 +363,7 @@ input {
     content: "";
     width: 50%;    
     height: 2px;    
-    background-color: #7AFF80;
+    background-color: var(--brown);
     position: absolute;
     left: 25%;    
     bottom: -4px;
@@ -391,9 +395,9 @@ input {
 .card:hover {
     z-index: 1;
     transform: scale(1.15);
-    box-shadow: -4px 4px 60px 18px rgba(0, 151, 40, 0.44);
-    -webkit-box-shadow: -4px 4px 60px 18px rgba(0, 151, 40, 0.44);
-    -moz-box-shadow: -4px 4px 60px 18px rgba(0, 151, 40, 0.44);
+    box-shadow: -7px 1px 56px 7px rgba(237, 182, 104, 0.81);
+    -webkit-box-shadow: -7px 1px 56px 7px rgba(237, 182, 104, 0.81);
+    -moz-box-shadow: -7px 1px 56px 7px rgba(237, 182, 104, 0.81);
 }
 
 .card .icon img {
@@ -402,7 +406,7 @@ input {
 }
 
 .card .icon {    
-    background-color: #7AFF80;
+    background-color: var(--brown);
     width: 100px;
     height: 100px;
     border-radius: 20px;
@@ -453,13 +457,13 @@ input {
 
 .poin .angka {
     width: 100%;
-    height: 50px;
+    height: 70px;
     font-size: 128px;
     font-weight: 800;
     display: flex;
     justify-content: start;
     align-items: center;        
-    color: #7AFF80;
+    color: var(--brown);
 }
 
 .poin .card {
@@ -559,7 +563,7 @@ input {
 .section-3 .makanan .back button {
     width: 10%;
     padding: 5px;
-    margin-top: 1.5em;
+    margin-top: 0.75em;
 }
 
 .section-3 .card:hover {
@@ -579,14 +583,14 @@ input {
     font-size: 18px;
     font-weight: 400;    
     width: 85%;
+    text-align: justify;
 }
 
 .judul-2 {    
     font-size: 24px;
     font-style: normal;
     font-weight: 800;
-    line-height: 140%;        
-    margin-top: 15px;
+    line-height: 140%;            
 }
 
 .section-3 .content {
@@ -656,6 +660,10 @@ input {
 .section-3 .cage {
     display: flex;
     justify-content: end;
+}
+
+span {
+    color: var(--brown);
 }
 
 @media only screen and (max-width: 768px) {
@@ -816,4 +824,38 @@ input {
         padding: 15px 0;
         font-size: 16px;
     }
+
+    @keyframes trans-left {
+        0% {
+            transform: translateY(0);
+            filter: blur(0);
+        }
+
+        50% {
+            transform: translateY(40%);
+            filter: blur(20px);
+        }
+
+        100% {
+            transform: translateY(0);
+            filter: blur(0);
+        }
+    }
+
+    @keyframes trans-right {
+        0% {
+            transform: translateY(0);
+            filter: blur(0);
+        }
+
+        50% {
+            transform: translateY(-40%);
+            filter: blur(20px);
+        }
+
+        100% {
+            transform: translateY(0);
+            filter: blur(0);
+        }
+    }    
 }
