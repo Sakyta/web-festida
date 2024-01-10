@@ -34,16 +34,6 @@ body {
     gap: 30px;
 }
 
-.hero-box .hero-text .heading {
-    color: #585858;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 114%;
-    /* 72.96px */
-    letter-spacing: -1.28px;
-}
-
 .hero-box .hero-text .desc {    
     color: #828282;
     font-size: 16px;
