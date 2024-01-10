@@ -57,7 +57,7 @@ function unrotate(button) {
     card.classList.remove("rotated");
 }
 
-var words = ["Bahagia", "Sehat", "Indah", "Sejahtera", "Sakinah", "Produktif"];
+/* var words = ["Bahagia", "Sehat", "Indah", "Sejahtera", "Sakinah", "Produktif"];
 var flag = 0;
 var text = runningTextElement;
 var speed = 250;
@@ -105,4 +105,19 @@ function runningText() {
     }
 }
 
-runningText();
+runningText(); */
+
+var button = document.querySelector('.show-trigger');
+
+button.addEventListener('click', function() {
+    var element = document.querySelector('.shalat-box');
+
+    if (element.classList.contains('hide'))
+    {
+        element.classList.remove('hide');
+    }
+    else
+    {
+        element.classList.add('hide');
+    }
+})

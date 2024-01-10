@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 20px;
+    gap: 20px;    
 }
 
 .heading-text {
@@ -26,7 +26,7 @@ body {
     font-style: normal;
     font-weight: 200;
     line-height: 140%; /* 89.6px */
-    letter-spacing: -1.28px;
+    letter-spacing: -1.28px;    
 }
 
 .heading-box button {
@@ -42,12 +42,15 @@ body {
     letter-spacing: -0.64px;
     border: none;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .shalat-box {
     display: flex;
     margin: 40px 100px;
     justify-content: space-between;
+    opacity: 1;
+    transition: all 1s;
 }
 
 .shalat-desc {
@@ -99,6 +102,14 @@ body {
     width: 565px;
     height: 505px;
     object-fit: cover;
+}
+
+.hide {
+    transform: scale(0.5);
+    margin-bottom: -350px;
+    opacity: 0;
+    z-index: -1;
+    position: relative;
 }
 
 @media only screen and (max-width: 768px) {
