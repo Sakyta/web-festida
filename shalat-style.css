@@ -1,0 +1,148 @@
+:root {
+    --green : #7AFF80;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    font-family: 'Manrope', sans-serif;
+}
+
+.heading-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.heading-text {
+    color: #585858;
+    width: 80%;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 140%; /* 89.6px */
+    letter-spacing: -1.28px;
+}
+
+.heading-box button {
+    width: 15%;
+    height: 6vh;
+    background-color: #edb668;
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%; /* 44.8px */
+    letter-spacing: -0.64px;
+    border: none;
+    border-radius: 3px;
+}
+
+.shalat-box {
+    display: flex;
+    margin: 40px 100px;
+    justify-content: space-between;
+}
+
+.shalat-desc {
+    color: #585858;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.shalat-title {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 102%; /* 65.28px */
+    letter-spacing: -1.28px;
+}
+
+.ayat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.arti {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    /* letter-spacing: -0.4px; */
+}
+
+.shalat-text {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    /* letter-spacing: -0.48px; */
+}
+
+.shalat-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.shalat-img img{
+    width: 565px;
+    height: 505px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    .heading-box button {
+        width: 70%;
+        height: 10vh;
+        background-color: #edb668;
+        color: #ffffff;
+        font-family: 'Manrope', sans-serif;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 140%; /* 44.8px */
+        letter-spacing: -0.64px;
+        border: none;
+        border-radius: 3px;
+    }
+
+    .shalat-box {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 40px 100px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shalat-box {
+        display: flex;
+        margin: 60px 60px;
+        justify-content: space-between;
+    }
+
+    .shalat-desc {
+        color: #585858;
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .shalat-img img{
+        width: 150%;
+        height: 150%;
+        object-fit: contain;
+    }
+}
