@@ -70,9 +70,11 @@ body {
     align-items: center;
     justify-content: center;    
     padding: 2em;
+    color: #585858;
 }
 
-.left, .right {
+.section-3 .left, .section-3 .right,
+.section-4 .left, .section-4 .right {
     width: 45%;
     margin: 2em 2.5%;
     height: auto;
@@ -85,18 +87,19 @@ body {
     font-family: 'Amiri', 'traditional arabic';
     font-size: 2.5em;
     margin: 0.5em;
-    text-align: center;    
+    text-align: center;
+    color: #585858;
 }
 
 .arti {
     font-size: 1.3em;
-    text-align: center;    
+    text-align: center;
 }
 
 .box h2 {
     text-align: center;
     text-transform: uppercase;
-    margin: 1em;
+    margin: 0.5em;
     font-size: 32px;
     font-weight: 800;
 }
@@ -105,13 +108,27 @@ body {
     font-size: 1.5em;
 }
 
-.box .arti {
-    font-size: 0.7em;
+.right .box .arti {
+    font-size: 1rem;
     max-width: 25em;
+    color: #585858;
+    text-align: center;
+}
+
+.left .box .arti {
+    font-size: 1rem;
+    max-width: 25em;
+    color: var(--white);
+    text-align: center;
 }
 
 .kutipan {
     margin: 1em;
+}
+
+.section-2 .kutipan{
+    text-align: center;
+    color: #585858;
 }
 
 .tidur-content {
@@ -145,10 +162,19 @@ body {
     text-align: center;
     font-weight: 400;
     max-width: 20em;
+    color: #585858;
+}
+
+.quotes span{
+    color: var(--brown);
 }
 
 .hidden {    
     display: none;    
+}
+
+.dark{
+    color: var(--white);
 }
 
 @keyframes trans-left {
@@ -329,8 +355,9 @@ input {
 }
 
 .heading {
+    color: #585858;
     text-transform: uppercase;
-    text-align: start;
+    text-align: end;
     font-size: 64px;
     font-weight: 600;    
     align-items: start;
@@ -338,9 +365,14 @@ input {
     line-height: 92%;
 }
 
+.heading span{
+    color: var(--brown);
+}
+
 .cage .desc {
     font-size: 20px;
     max-width: 600px;
+    color: #585858;
 }
 
 .quote-box {
@@ -367,6 +399,7 @@ input {
     display: block;
     width: fit-content;
     margin-top: -2em;
+    color: #585858;
 }
 
 .heading-2::after {
@@ -400,6 +433,7 @@ input {
     gap: 1em;
     cursor: pointer;
     transition: all 1s;
+    color: #585858;
 }
 
 .card:hover {
@@ -416,7 +450,7 @@ input {
 }
 
 .card .icon {    
-    background-color: var(--brown);
+    background-color: #FFE8C8;
     width: 100px;
     height: 100px;
     border-radius: 20px;
@@ -437,6 +471,7 @@ input {
     font-size: 24px;
 }
 
+
 .section-1 .cage {    
     display: flex;    
     justify-content: end;
@@ -446,10 +481,14 @@ input {
     margin: 0;
 }
 
+
+
 .poin .content {
     flex-direction: column;  
     justify-content: start;  
     align-items: start;
+    color: #585858;
+    max-width: fit-content;
 }
 
 .poin .content .arabic {
@@ -458,6 +497,7 @@ input {
     justify-content: end;
     text-align: end;
     display: flex;
+    font-size: 2rem;
 }
 
 .poin .content .arti {
@@ -473,7 +513,7 @@ input {
     display: flex;
     justify-content: start;
     align-items: center;        
-    color: var(--brown);
+    color: rgba(254, 204, 133, 0.39);
 }
 
 .poin .card {
@@ -483,7 +523,10 @@ input {
     width: 100%;    
     max-width: 50em;  
     justify-content: start;
+    gap: 50px;
     padding: 3em;
+
+    min-width: 50em;
 }
 
 .poin .icon {
@@ -500,7 +543,10 @@ input {
 }
 
 .poin.even {    
-    margin-left: 40em;
+    /* put all even card right */
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
     width: auto;
 }
 
@@ -672,7 +718,7 @@ input {
     justify-content: end;
 }
 
-span {
+.section-3 span {
     color: var(--brown);
 }
 
@@ -711,9 +757,9 @@ footer {
         flex-direction: column;
     }
 
-    .quotes {
+    /* .quotes {
         font-size: 20px;
-    }
+    } */
 
     .sepenggal {
         font-size: 0.5em;
@@ -749,13 +795,22 @@ footer {
         padding: 1em;
     }
 
-    .section-4 {
+    .section-4 .content {
+        /* width: 100%; */
         height: auto;
     }
 
     .showcase {
         display: grid;
         width: auto;
+    }
+
+    .quote-box{
+        margin: 50px 0;
+    }
+
+    .quote-box .content{
+        padding: 0;
     }
 
     .section-2 .quote-box .content {
@@ -863,6 +918,14 @@ footer {
     .section-3 .card button{
         padding: 15px 0;
         font-size: 16px;
+    }
+
+    /* .section-4 .box{
+        padding: 0;
+    } */
+
+    .section-1, .section-2, .section-3, .section-4{
+        margin: 40px 0;
     }
 
     @keyframes trans-left {

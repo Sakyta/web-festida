@@ -11,22 +11,27 @@
 
 body {
   min-height: 200vh;
+  /* delete this */
   background-color: #ffffff;
   font-family: 'Manrope', sans-serif;
 }
 
 #abstrak {
   background: linear-gradient(180deg, #FFF6EA 0%, rgba(255, 232, 199, 0.50) 100%);
-  padding: 120px 10vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 100px;
   align-items: center;
+  padding: 100px 0;
 }
 
 #abstrak img {
   height: 100%;
+}
+
+#abstrak .wrapper{
+  /* padding: 120px 10vw; */
 }
 
 .top,
@@ -38,15 +43,15 @@ body {
   align-items: center;
 }
 
-.right,
-.left {
+#abstrak .right,
+#abstrak .left {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
 }
 
-.right .judul,
-.left .judul {
+#abstrak .right .judul,
+#abstrak .left .judul {
   font-size: 3rem;
   color: #585858;
   max-width: 553px;
@@ -57,19 +62,22 @@ body {
   color: #EDB668;
 }
 
-.right p,
-.left p {
+#abstrak .right p,
+#abstrak .left p {
   font-size: 1.2rem;
   color: #828282;
   line-height: 160%;
+  text-align: justify;
+  align-items: flex-start;
 }
 
-.dalil {
+#abstrak .dalil {
   color: #6E5858;
   font-family: 'Poppins', sans-serif;
   font-style: italic;
   font-weight: 600;
   font-size: 1.25rem;
+  text-align: justify;
 }
 
 .dalil span {
@@ -87,9 +95,14 @@ body {
   font-weight: 600;
 }
 
+.abstrak img {
+  width: 100%;
+  height: auto;
+}
+
 @media only screen and (max-width: 768px) {
 
-  #abstrak{
+  #abstrak {
     padding: 10vw;
   }
 
@@ -100,11 +113,27 @@ body {
     gap: 4.375rem;
   }
 
-  .bottom{
+  .bottom {
     flex-direction: column-reverse;
   }
 
-  img{
+  img {
     width: 100%;
   }
 }
+
+/* @media only screen and (max-width: 1320px) {
+
+  .top,
+  .bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .top .left, .bottom .right {
+    max-width: 330px;
+  }
+} */

@@ -8,55 +8,62 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    min-height: 100vh;
     background-color: #FFFFFF;
+}
+
+.hero-box .hero-text .heading{
+    text-align: start;
+    font-weight: 600;
 }
 
 .hero-box {
     font-family: 'Manrope', sans-serif;
     display: flex;
-    height: max-content;
-    justify-content: space-between;
+    /* height: max-content; */
+    /* justify-content: space-between; */
     gap: 1vh;
-    width: 100%;
+    /* width: 100%; */
+    margin: 90px 0;
 }
 
 .hero-box .hero-text {
     width: 50%;
-    padding-left: 2em;    
+    /* padding-left: 2em;     */
+    padding-left: 120px;    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     gap: 30px;
+}
+
+.hero-box .hero-text span{
+    color: #EDB668;
 }
 
 .hero-box .hero-text .desc {    
     color: #828282;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
-    /* 25.6px */
-    letter-spacing: -0.32px;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 40em;
+    max-width: 570px;
 }
 
 .hero-box .hero-text button {
     color: #FFF;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 160%;
     /* 25.6px */
-    display: flex;
     padding: 10px 18px;
     flex-direction: column;
     justify-content: center;
@@ -66,6 +73,7 @@ body {
     background: #EDB668;
     border: none;
     cursor: pointer;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 .hero-box .hero-img {
@@ -105,7 +113,13 @@ body {
     .hero-box {
         flex-direction: column-reverse;        
         align-items: end;   
-        justify-content: start;     
+        justify-content: start;
+        gap: 30px;
+        margin: 60px 0;
+    }
+
+    .hero-box .hero-text {
+        padding-left: 4em;
     }
 
     .hero-box .hero-img {

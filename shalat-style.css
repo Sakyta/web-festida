@@ -5,17 +5,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 body {
-    min-height: 100vh;
     background-color: #FFFFFF;
     font-family: 'Manrope', sans-serif;
+}
+
+.section-shalat{
+    padding: 80px 0;
 }
 
 .heading-box {
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 140%;
     width: 100%;
-    gap: 20px;    
+    gap: 24px;    
 }
 
 .heading-text {
@@ -24,9 +28,10 @@ body {
     text-align: center;
     font-size: 64px;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 140%; /* 89.6px */
-    letter-spacing: -1.28px;    
+    letter-spacing: -1.28px;
+    max-width: 1171px;  
 }
 
 .heading-box button {
@@ -47,10 +52,32 @@ body {
 
 .shalat-box {
     display: flex;
-    margin: 40px 100px;
+    margin: 80px 0;
     justify-content: space-between;
     opacity: 1;
     transition: all 1s;
+    padding: 0 120px;
+    gap: 20px;
+    height: auto;
+    /* grid-template-rows: 1fr; */
+}
+
+/* .shalat-box .wrapper{
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows 200ms;
+} */
+
+.hide{
+    transition: all 1s;
+    height: 300px;
+}
+
+.shalat-box .arabic{
+    font-size: 2.25rem;
+    text-align: start;
+    margin: 0;
 }
 
 .shalat-desc {
@@ -58,7 +85,9 @@ body {
     width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 50px;
+    text-align: justify;
 }
 
 .shalat-title {
@@ -73,35 +102,33 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
+    /* gap: 20px; */
 }
 
-.arti {
+.section-shalat .arti {
     font-size: 20px;
-    font-style: normal;
     font-weight: 300;
     line-height: 140%;
-    /* letter-spacing: -0.4px; */
+    text-align: justify;
 }
 
 .shalat-text {
-    font-size: 20px;
-    font-style: normal;
+    font-size: 24px;
     font-weight: 300;
     line-height: 140%;
     /* letter-spacing: -0.48px; */
 }
 
 .shalat-img {
-    width: 50%;
+    width: 45%;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 .shalat-img img{
-    width: 565px;
-    height: 505px;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
 }
 
 .hide {
@@ -113,17 +140,15 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    .section-shalat .heading-text{
+        width: 60%;
+    }
+
     .heading-box button {
-        width: 70%;
-        height: 10vh;
+        width: 50%;
         background-color: #edb668;
         color: #ffffff;
-        font-family: 'Manrope', sans-serif;
         font-size: 25px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 140%; /* 44.8px */
-        letter-spacing: -0.64px;
         border: none;
         border-radius: 3px;
     }
@@ -155,5 +180,9 @@ body {
         width: 150%;
         height: 150%;
         object-fit: contain;
+    }
+
+    .section-shalat .arabic{
+        font-size: 32px;
     }
 }
