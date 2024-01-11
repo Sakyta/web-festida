@@ -800,6 +800,22 @@ footer {
     max-width: none;
 }
 
+.strong-quote {
+    display: flex;
+    padding: 70px 135px;
+    flex-direction: column;
+    align-items: center;
+    color: #585858;
+    text-align: center;    
+    font-size: 64px;    
+    font-weight: 300;
+    line-height: 140%;
+    /* 89.6px */
+    letter-spacing: -1.28px;
+    width: 100vw;
+    background-color: #FFF3E2;
+}
+
 @media only screen and (max-width: 768px) {
     .nav {
         display: none;
@@ -1058,4 +1074,9 @@ footer {
             filter: blur(0);
         }
     }    
+
+    .strong-quote {
+        font-size: 48px;
+        padding: 1em;
+    }
 }
