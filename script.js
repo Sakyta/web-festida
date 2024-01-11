@@ -1,3 +1,16 @@
+window.addEventListener('scroll', function() {
+    var content = document.querySelector('.nav');
+
+    if (window.scrollY > 500) 
+    {
+        content.classList.add('sticky');                
+    }
+    else
+    {
+        content.classList.remove('sticky');   
+    }
+});
+
 function toggleMode() {
     const toggle = document.getElementById("checkbox");
     const section = document.querySelector(".section-4");

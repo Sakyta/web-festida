@@ -21,6 +21,44 @@ body {
     flex-direction: column;
 }
 
+.nav {
+    position: fixed;
+    left: 95%;
+    top: auto;    
+    bottom: 30vh;
+    transform: translateX(150%);
+    transition: all 0.5s;    
+}
+
+.nav img {
+    width: 2em;
+    height: 2em;
+}
+
+.nav a {
+    width: 2em;
+    height: 2em;
+    transition: all 0.5s;
+}
+
+.nav a:hover {
+    transform: translateY(-30%);
+}
+
+.capsul {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    gap: 3em;
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    border-radius: 4em;
+}
+
+.sticky {
+    transform: translateX(0);
+}
+
 .section-1, .section-2, .section-3 {
     width: 80%;
     display: flex;
@@ -79,7 +117,7 @@ body {
 }
 
 .section-4 .content{
-    width: ;
+    /* width: ; */
 }
 
 .section-3 .left, .section-3 .right,
@@ -763,6 +801,10 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
     .content {
         flex-direction: column;
     }
