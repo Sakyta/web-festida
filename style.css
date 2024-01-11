@@ -22,26 +22,27 @@ body {
 }
 
 .section-1, .section-2, .section-3 {
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 60px;
-    margin: 2em;
+    margin: 2em 0;
 }
 
 .section-4 {    
     width: 80%;
     height: auto;
-    min-height: 90vh;
+    /* min-height: 90vh; */
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     transition: all 1s;    
-    margin: 2em;    
+    margin: 10em 0;
+    padding: 2.5rem;
 }
 
 .s4-wrapper {
@@ -71,6 +72,14 @@ body {
     justify-content: center;    
     padding: 2em;
     color: #585858;
+}
+
+.section-4 .box{
+    width: auto;
+}
+
+.section-4 .content{
+    width: ;
 }
 
 .section-3 .left, .section-3 .right,
@@ -160,7 +169,7 @@ body {
 .quotes {
     font-size: 48px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 300;
     max-width: 20em;
     color: #585858;
 }
@@ -220,7 +229,7 @@ body {
 }
 
 .toggle label {
-    background-color: black;
+    background-color: white;
     width: 120px;
     height: 50px;
     display: flex;    
@@ -235,7 +244,7 @@ body {
 .toggle label::after {
     content: "";
     width: 48px;
-    background-color: #585858;
+    background-color: #FFE500;
     height: 48px;
     display: block;
     border-radius: 50%;
@@ -250,12 +259,14 @@ body {
 }
 
 .toggle input:checked + label {
-    background-color: white;
+    background-color: black;
+
 }
 
 .toggle input:checked + label::after {
     left: 70px;    
-    background-color: #FFE500;
+    background-color: #585858;
+
 }
 
 .siang {
@@ -285,19 +296,19 @@ input {
 }
 
 .moon {
-    margin-left: 7px;
-    transition: all 1s;
-    fill: white;
-}
-
-.sun {
     margin-left: 27px;
     transition: all 1s;
     fill: white;
 }
 
+.sun {
+    margin-left: 7px;
+    transition: all 1s;
+    fill: white;
+}
+
 .toggle input:checked + label .moon {
-    fill: black;
+    fill: white;
 }
 
 .toggle input:checked + label .sun {
@@ -423,7 +434,7 @@ input {
 .card {
     border-radius: 50px;
     background: var(--ffffff, #FFF);        
-    box-shadow: 0px 50px 80px -30px rgba(151, 109, 0, 0.20);
+    box-shadow: 0px 50px 80px -20px rgba(151, 109, 0, 0.20);
     width: 100%;
     height: 20em;
     padding: 2em;
@@ -571,11 +582,11 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5vh;
+    gap: 10vh;
 }
 
 .section-3 .card {
-    width: 65em;
+    width: 80em;
     display: flex;
     /* border: solid #ffdeaf 1px; */
     border-radius: 10px;    
@@ -757,9 +768,17 @@ footer {
         flex-direction: column;
     }
 
-    /* .quotes {
-        font-size: 20px;
-    } */
+    .heading{
+        font-size: 3rem;
+    }
+
+    .heading-2, .makanan-title{
+        font-size: 2rem;
+    }
+    
+    .section-4 .quotes {
+        font-size: 2rem;
+    }
 
     .sepenggal {
         font-size: 0.5em;
@@ -772,6 +791,7 @@ footer {
 
     .tidur-content {
         width: 100%;
+        margin: 10px 0;
     }
 
     .tidur-content .nomor {
@@ -779,26 +799,42 @@ footer {
     }
 
     .tidur-content h4 {
-        font-size: 10px;
+        font-size: 16px;
     }
 
     .tidur-content .desc {
         font-size: 0.6em
     }
 
+    .section-4{
+        margin: 5em;
+    }
+
+    .section-4 .left, .section-4 .right{
+        width: 100%;
+    }
+
+    .section-4 .arabic{
+        font-size: 1.25rem;
+    }
+
     .left, .right {
         width: 80%;
+    }
+
+    .sepenggal {
+        max-width: 100em;
     }
 
     .box {
         min-height: 0;
         padding: 1em;
     }
-
+/* 
     .section-4 .content {
-        /* width: 100%; */
+        width: 100%;
         height: auto;
-    }
+    } */
 
     .showcase {
         display: grid;
@@ -829,13 +865,19 @@ footer {
     }
 
     .poin {
-        width: auto;
+        /* width: auto; */
+        max-width: calc(100% - 20px);
+    }
+
+    .card{
+        border-radius: 10px;
     }
 
     .poin .card {
         padding: 1em;
         width: auto;
-        max-width: none;
+        min-width: 90%;
+        gap: 15px;
     }
 
     .poin .icon {
@@ -851,14 +893,19 @@ footer {
 
     .poin .content .arabic {
         margin: 0;
-        padding: 10px;
+        text-align: justify;
+    }
+
+    .section-1 .content{
+        justify-content: space-between;
+        gap: 10px;
     }
 
     .section-3 .makanan {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20vh;
+        gap: 10vh;
     }
 
     .section-3 .makanan-title{
@@ -878,10 +925,19 @@ footer {
         overflow: auto;
         align-items: start;
         justify-content: start;
+        padding: 1.5em;
+    }
+
+    .section-3 .arti, .section-3 li{
+        font-size: 1rem;
+    }
+
+    .section-3 .card .arabic{
+        font-size: 1.5rem;
     }
 
     .section-3 .makanan .back button {
-        width: 30%;
+        width: 100%;
     }
 
     .section-3 .front {

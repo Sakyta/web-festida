@@ -119,7 +119,7 @@ body {
     }
 
     .hero-box .hero-text {
-        padding-left: 4em;
+        padding-left: 3rem;
     }
 
     .hero-box .hero-img {
@@ -134,12 +134,12 @@ body {
     }
 
     .hero-box .hero-text .heading {
-        font-size: 7vw;
+        font-size: 12vw;
     }
 
     .hero-box .hero-text .desc {
         text-align: justify;
-        font-size: 2.5vw;
+        font-size: 3vw;
         width: 80%;
     }
 
@@ -149,6 +149,6 @@ body {
     }
 
     .hero-box .hero-text button {
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 }

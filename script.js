@@ -11,22 +11,39 @@ function toggleMode() {
     left.classList.remove("trans-left");
     right.classList.remove("trans-right");
 
+    // if (toggle.checked) {
+    //     section.classList.remove("malam");
+    //     section.classList.add("siang");
+    //     left.classList.add("trans-left");
+    //     right.classList.add("trans-right");
+    //     setTimeout(function () {
+    //         elementSiangKanan.classList.remove("hidden");
+    //         elementSiangKiri.classList.remove("hidden");
+    //         elementMalamKanan.classList.add("hidden");
+    //         elementMalamKiri.classList.add("hidden");
+    //     }, 500);
+    //     setTimeout(function () {
+    //         left.classList.remove("trans-left");
+    //         right.classList.remove("trans-right");
+    //     }, 1000);
+    // } else {
+    //     section.classList.add("malam");
+    //     section.classList.remove("siang");
+    //     left.classList.add("trans-left");
+    //     right.classList.add("trans-right");
+    //     setTimeout(function () {
+    //         elementSiangKanan.classList.add("hidden");
+    //         elementSiangKiri.classList.add("hidden");
+    //         elementMalamKanan.classList.remove("hidden");
+    //         elementMalamKiri.classList.remove("hidden");
+    //     }, 500);
+    //     setTimeout(function () {
+    //         left.classList.remove("trans-left");
+    //         right.classList.remove("trans-right");
+    //     }, 1000);
+    // }
+    
     if (toggle.checked) {
-        section.classList.remove("malam");
-        section.classList.add("siang");
-        left.classList.add("trans-left");
-        right.classList.add("trans-right");
-        setTimeout(function () {
-            elementSiangKanan.classList.remove("hidden");
-            elementSiangKiri.classList.remove("hidden");
-            elementMalamKanan.classList.add("hidden");
-            elementMalamKiri.classList.add("hidden");
-        }, 500);
-        setTimeout(function () {
-            left.classList.remove("trans-left");
-            right.classList.remove("trans-right");
-        }, 1000);
-    } else {
         section.classList.add("malam");
         section.classList.remove("siang");
         left.classList.add("trans-left");
@@ -36,6 +53,22 @@ function toggleMode() {
             elementSiangKiri.classList.add("hidden");
             elementMalamKanan.classList.remove("hidden");
             elementMalamKiri.classList.remove("hidden");
+        }, 500);
+        setTimeout(function () {
+            left.classList.remove("trans-left");
+            right.classList.remove("trans-right");
+        }, 1000);
+    } else {
+    
+        section.classList.remove("malam");
+        section.classList.add("siang");
+        left.classList.add("trans-left");
+        right.classList.add("trans-right");
+        setTimeout(function () {
+            elementSiangKanan.classList.remove("hidden");
+            elementSiangKiri.classList.remove("hidden");
+            elementMalamKanan.classList.add("hidden");
+            elementMalamKiri.classList.add("hidden");
         }, 500);
         setTimeout(function () {
             left.classList.remove("trans-left");

@@ -1,5 +1,5 @@
 :root {
-    --green : #7AFF80;
+    --green: #7AFF80;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
@@ -9,7 +9,7 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
-.section-shalat{
+.section-shalat {
     padding: 80px 0;
 }
 
@@ -19,7 +19,7 @@ body {
     align-items: center;
     line-height: 140%;
     width: 100%;
-    gap: 24px;    
+    gap: 24px;
 }
 
 .heading-text {
@@ -29,9 +29,10 @@ body {
     font-size: 64px;
     font-style: normal;
     font-weight: 300;
-    line-height: 140%; /* 89.6px */
+    line-height: 140%;
+    /* 89.6px */
     letter-spacing: -1.28px;
-    max-width: 1171px;  
+    max-width: 1171px;
 }
 
 .heading-box button {
@@ -43,7 +44,8 @@ body {
     font-size: 25px;
     font-style: normal;
     font-weight: 300;
-    line-height: 140%; /* 44.8px */
+    line-height: 140%;
+    /* 44.8px */
     letter-spacing: -0.64px;
     border: none;
     border-radius: 3px;
@@ -69,12 +71,12 @@ body {
     transition: grid-template-rows 200ms;
 } */
 
-.hide{
+.hide {
     transition: all 1s;
     height: 300px;
 }
 
-.shalat-box .arabic{
+.shalat-box .arabic {
     font-size: 2.25rem;
     text-align: start;
     margin: 0;
@@ -94,7 +96,8 @@ body {
     font-size: 64px;
     font-style: normal;
     font-weight: 800;
-    line-height: 102%; /* 65.28px */
+    line-height: 102%;
+    /* 65.28px */
     letter-spacing: -1.28px;
 }
 
@@ -125,10 +128,9 @@ body {
     align-items: center;
 }
 
-.shalat-img img{
+.shalat-img img {
     width: 100%;
     height: auto;
-    /* object-fit: cover; */
 }
 
 .hide {
@@ -140,12 +142,14 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-    .section-shalat .heading-text{
-        width: 60%;
+    .section-shalat .heading-text {
+        width: 85%;
+        line-height: 110%;
+        font-size: 3rem;
     }
 
     .heading-box button {
-        width: 50%;
+        width: 70%;
         background-color: #edb668;
         color: #ffffff;
         font-size: 25px;
@@ -154,17 +158,19 @@ body {
     }
 
     .shalat-box {
-        display: flex;
+        /* display: flex;
         flex-direction: column-reverse;
         margin: 40px 100px;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
     }
 
     .shalat-box {
-        display: flex;
-        margin: 60px 60px;
-        justify-content: space-between;
+        flex-direction: column-reverse;
+        margin: 40px auto;
+        justify-content: center;
+        align-items: center;
+        padding: 0 40px;
     }
 
     .shalat-desc {
@@ -176,13 +182,12 @@ body {
         gap: 50px;
     }
 
-    .shalat-img img{
-        width: 150%;
-        height: 150%;
-        object-fit: contain;
+    .shalat-img {
+        width: 100%;
+        height: auto;
     }
 
-    .section-shalat .arabic{
+    .section-shalat .arabic {
         font-size: 32px;
     }
 }

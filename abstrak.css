@@ -50,8 +50,7 @@ body {
   gap: 0.9rem;
 }
 
-#abstrak .right .judul,
-#abstrak .left .judul {
+#abstrak .judul {
   font-size: 3rem;
   color: #585858;
   max-width: 553px;
@@ -62,8 +61,7 @@ body {
   color: #EDB668;
 }
 
-#abstrak .right p,
-#abstrak .left p {
+#abstrak p{
   font-size: 1.2rem;
   color: #828282;
   line-height: 160%;
@@ -103,7 +101,16 @@ body {
 @media only screen and (max-width: 768px) {
 
   #abstrak {
-    padding: 10vw;
+    padding: 10vw 2vw;
+  }
+
+  #abstrak .judul{
+    font-size: 2rem;
+    line-height: 100%;
+}
+
+  #abstrak p{
+    font-size: 1rem;
   }
 
   .top,
@@ -121,19 +128,3 @@ body {
     width: 100%;
   }
 }
-
-/* @media only screen and (max-width: 1320px) {
-
-  .top,
-  .bottom {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 3rem;
-    align-items: center;
-  }
-
-  .top .left, .bottom .right {
-    max-width: 330px;
-  }
-} */
