@@ -8,14 +8,14 @@ function toggleMode() {
     const elementMalamKiri = document.querySelector(".left .box");
     const elementMalamKanan = document.querySelector(".right .sepenggal");
 
-    left.classList.remove("trans-left");
-    right.classList.remove("trans-right");
+    left.classList.remove("slide-left");
+    right.classList.remove("slide-right");
 
     // if (toggle.checked) {
     //     section.classList.remove("malam");
     //     section.classList.add("siang");
-    //     left.classList.add("trans-left");
-    //     right.classList.add("trans-right");
+    //     left.classList.add("slide-left");
+    //     right.classList.add("slide-right");
     //     setTimeout(function () {
     //         elementSiangKanan.classList.remove("hidden");
     //         elementSiangKiri.classList.remove("hidden");
@@ -23,14 +23,14 @@ function toggleMode() {
     //         elementMalamKiri.classList.add("hidden");
     //     }, 500);
     //     setTimeout(function () {
-    //         left.classList.remove("trans-left");
-    //         right.classList.remove("trans-right");
+    //         left.classList.remove("slide-left");
+    //         right.classList.remove("slide-right");
     //     }, 1000);
     // } else {
     //     section.classList.add("malam");
     //     section.classList.remove("siang");
-    //     left.classList.add("trans-left");
-    //     right.classList.add("trans-right");
+    //     left.classList.add("slide-left");
+    //     right.classList.add("slide-right");
     //     setTimeout(function () {
     //         elementSiangKanan.classList.add("hidden");
     //         elementSiangKiri.classList.add("hidden");
@@ -38,16 +38,16 @@ function toggleMode() {
     //         elementMalamKiri.classList.remove("hidden");
     //     }, 500);
     //     setTimeout(function () {
-    //         left.classList.remove("trans-left");
-    //         right.classList.remove("trans-right");
+    //         left.classList.remove("slide-left");
+    //         right.classList.remove("slide-right");
     //     }, 1000);
     // }
     
     if (toggle.checked) {
         section.classList.add("malam");
         section.classList.remove("siang");
-        left.classList.add("trans-left");
-        right.classList.add("trans-right");
+        left.classList.add("slide-left");
+        right.classList.add("slide-right");
         setTimeout(function () {
             elementSiangKanan.classList.add("hidden");
             elementSiangKiri.classList.add("hidden");
@@ -55,15 +55,15 @@ function toggleMode() {
             elementMalamKiri.classList.remove("hidden");
         }, 500);
         setTimeout(function () {
-            left.classList.remove("trans-left");
-            right.classList.remove("trans-right");
+            left.classList.remove("slide-left");
+            right.classList.remove("slide-right");
         }, 1000);
     } else {
     
         section.classList.remove("malam");
         section.classList.add("siang");
-        left.classList.add("trans-left");
-        right.classList.add("trans-right");
+        left.classList.add("slide-left");
+        right.classList.add("slide-right");
         setTimeout(function () {
             elementSiangKanan.classList.remove("hidden");
             elementSiangKiri.classList.remove("hidden");
@@ -71,8 +71,8 @@ function toggleMode() {
             elementMalamKiri.classList.add("hidden");
         }, 500);
         setTimeout(function () {
-            left.classList.remove("trans-left");
-            right.classList.remove("trans-right");
+            left.classList.remove("slide-left");
+            right.classList.remove("slide-right");
         }, 1000);
     }
 }

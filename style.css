@@ -492,13 +492,12 @@ input {
     margin: 0;
 }
 
-
-
 .poin .content {
     flex-direction: column;  
     justify-content: start;  
     align-items: start;
     color: #585858;
+    width: 100%;
     max-width: fit-content;
 }
 

@@ -71,11 +71,6 @@ body {
     transition: grid-template-rows 200ms;
 } */
 
-.hide {
-    transition: all 1s;
-    height: 300px;
-}
-
 .shalat-box .arabic {
     font-size: 2.25rem;
     text-align: start;
@@ -135,7 +130,7 @@ body {
 
 .hide {
     transform: scale(0.5);
-    margin-bottom: -350px;
+    margin-bottom: -550px;
     opacity: 0;
     z-index: -1;
     position: relative;
@@ -189,5 +184,9 @@ body {
 
     .section-shalat .arabic {
         font-size: 32px;
+    }
+
+    .hide {
+        margin-bottom: -65em;             
     }
 }
