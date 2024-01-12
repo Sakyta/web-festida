@@ -14,12 +14,12 @@ window.addEventListener('scroll', function() {
 function toggleMode() {
     const toggle = document.getElementById("checkbox");
     const section = document.querySelector(".section-4");
-    const left = document.querySelector(".left");
-    const right = document.querySelector(".right");
-    const elementSiangKiri = document.querySelector('.left .quotes');
-    const elementSiangKanan = document.querySelector('.right .box');
-    const elementMalamKiri = document.querySelector(".left .box");
-    const elementMalamKanan = document.querySelector(".right .sepenggal");
+    const left = document.querySelector("#section-4 .left");
+    const right = document.querySelector("#section-4 .right");
+    const elementSiangKiri = document.querySelector('#section-4 .left .quotes');
+    const elementSiangKanan = document.querySelector('#section-4 .right .box');
+    const elementMalamKiri = document.querySelector("#section-4 .left .box");
+    const elementMalamKanan = document.querySelector("#section-4 .right .sepenggal");
 
     left.classList.remove("slide-left");
     right.classList.remove("slide-right");
