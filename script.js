@@ -181,6 +181,11 @@ function observeElement(className, showClass) {
     hiddenElements.forEach((el) => observer.observe(el));
 }
 
+observeElement('.hide-a-1', 'show-a');
+observeElement('.hide-a-2', 'show-a');
+observeElement('.hide-l-1', 'show-a');
+observeElement('.hide-r-1', 'show-a');
+
 const observer = new IntersectionObserver(
     (entry) => {
         var footer = document.querySelector('footer');
