@@ -189,10 +189,12 @@ observeElement('.hide-r-1', 'show-a');
 const observer = new IntersectionObserver(
     (entry) => {
         var footer = document.querySelector('footer');
+        var nav = document.querySelector('.nav');
         if (entry[0].isIntersecting) {
             footer.classList.remove('hidden');
+            nav.classList.remove('sticky');
         } else {
-            footer.classList.add('hidden');
+            footer.classList.add('hidden');            
         }        
     }    
 );
