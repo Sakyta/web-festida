@@ -49,6 +49,7 @@ nav h1 span{
     bottom: 30vh;
     transform: translateX(150%);
     transition: all 0.5s;    
+    z-index: 1;
 }
 
 .nav img {
