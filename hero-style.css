@@ -27,7 +27,7 @@ body {
     /* justify-content: space-between; */
     gap: 1vh;
     /* width: 100%; */
-    margin: 90px 0;
+    margin: 60px 0;
 }
 
 .hero-box .hero-text {
@@ -140,6 +140,7 @@ body {
 
     .hero-box .hero-text .heading {
         font-size: 12vw;
+        padding: 0;
     }
 
     .hero-box .hero-text .desc {
