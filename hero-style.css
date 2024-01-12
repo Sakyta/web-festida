@@ -74,6 +74,11 @@ body {
     border: none;
     cursor: pointer;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: all 1s;
+}
+
+.hero-box .hero-text button:hover {
+    transform: scale(1.1125);
 }
 
 .hero-box .hero-img {

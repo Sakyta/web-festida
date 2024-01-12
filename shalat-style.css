@@ -50,6 +50,11 @@ body {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    transition: all 1s;
+}
+
+.heading-box button:hover {
+    transform: scale(1.1125);
 }
 
 .shalat-box {
