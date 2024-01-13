@@ -13,7 +13,7 @@ body {
     padding: 80px 0;
 }
 
-.heading-box {
+.section-shalat .heading-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,7 @@ body {
     gap: 24px;
 }
 
-.heading-text {
+.section-shalat .heading-text {
     color: #585858;
     width: 80%;
     text-align: center;
@@ -35,7 +35,7 @@ body {
     max-width: 1171px;
 }
 
-.heading-box button {
+.section-shalat .heading-box button {
     width: 15%;
     height: 6vh;
     background-color: #edb668;
@@ -53,11 +53,11 @@ body {
     transition: all 1s;
 }
 
-.heading-box button:hover {
+.section-shalat .heading-box button:hover {
     transform: scale(1.1125);
 }
 
-.shalat-box {
+.section-shalat .shalat-box {
     display: flex;
     margin: 80px 0;
     justify-content: space-between;
@@ -76,13 +76,13 @@ body {
     transition: grid-template-rows 200ms;
 } */
 
-.shalat-box .arabic {
+.section-shalat .shalat-box .arabic {
     font-size: 2.25rem;
     text-align: start;
     margin: 0;
 }
 
-.shalat-desc {
+.section-shalat .shalat-desc {
     color: #585858;
     width: 50%;
     display: flex;
@@ -92,7 +92,7 @@ body {
     text-align: justify;
 }
 
-.shalat-title {
+.section-shalat .shalat-title {
     font-size: 64px;
     font-style: normal;
     font-weight: 800;
@@ -101,7 +101,7 @@ body {
     letter-spacing: -1.28px;
 }
 
-.ayat {
+.section-shalat .ayat {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -115,20 +115,20 @@ body {
     text-align: justify;
 }
 
-.shalat-text {
+.section-shalat .shalat-text {
     font-size: 24px;
     font-weight: 300;
     line-height: 140%;
     /* letter-spacing: -0.48px; */
 }
 
-.shalat-img {
+.section-shalat .shalat-img {
     width: 45%;
     display: flex;
     align-items: center;
 }
 
-.shalat-img img {
+.section-shalat .shalat-img img {
     width: 100%;
     height: auto;
 }
@@ -148,7 +148,7 @@ body {
         font-size: 3rem;
     }
 
-    .heading-box button {
+    .section-shalat .heading-box button {
         width: 70%;
         background-color: #edb668;
         color: #ffffff;
@@ -157,7 +157,7 @@ body {
         border-radius: 3px;
     }
 
-    .shalat-box {
+    .section-shalat .shalat-box {
         /* display: flex;
         flex-direction: column-reverse;
         margin: 40px 100px;
@@ -165,7 +165,7 @@ body {
         align-items: center; */
     }
 
-    .shalat-box {
+    .section-shalat .shalat-box {
         flex-direction: column-reverse;
         margin: 40px auto;
         justify-content: center;
@@ -173,7 +173,7 @@ body {
         padding: 0 40px;
     }
 
-    .shalat-desc {
+    .section-shalat .shalat-desc {
         color: #585858;
         margin-top: 40px;
         width: 100%;
@@ -182,7 +182,7 @@ body {
         gap: 50px;
     }
 
-    .shalat-img {
+    .section-shalat .shalat-img {
         width: 100%;
         height: auto;
     }

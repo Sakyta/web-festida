@@ -82,6 +82,184 @@ nav h1 span{
     transform: translateX(0);
 }
 
+/* Hero */
+.hero-box .hero-text .heading {
+    text-align: start;
+    font-weight: 600;
+}
+
+.hero-box {
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    /* height: max-content; */
+    /* justify-content: space-between; */
+    gap: 1vh;
+    /* width: 100%; */
+    margin: 90px 0;
+}
+
+.hero-box .hero-text {
+    width: 50%;
+    /* padding-left: 2em;     */
+    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 30px;
+}
+
+.hero-box .hero-text span {
+    color: #EDB668;
+}
+
+.hero-box .hero-text .desc {
+    color: #828282;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 40em;
+    max-width: 570px;
+}
+
+.hero-box .hero-text button {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    /* 25.6px */
+    padding: 10px 18px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 55px;
+    background: #EDB668;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: all 1s;
+}
+
+.hero-box .hero-text button:hover {
+    transform: scale(1.1125);
+}
+
+.hero-box .hero-img {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.hero-box .hero-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.running::after {
+    content: "|";
+    animation: blip 1s ease forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blip {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Abstrak */
+#abstrak {
+    background: linear-gradient(180deg, #FFF6EA 0%, rgba(255, 232, 199, 0.50) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+    padding: 100px 0;
+}
+
+#abstrak img {
+    height: 100%;
+}
+
+#abstrak .wrapper {
+    /* padding: 120px 10vw; */
+}
+
+#abstrak .top,
+#abstrak .bottom {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 6.25rem;
+    align-items: center;
+}
+
+#abstrak .right,
+#abstrak .left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+#abstrak .judul {
+    font-size: 3rem;
+    color: #585858;
+    max-width: 553px;
+}
+
+#abstrak .right .judul span,
+#abstrak .left .judul span {
+    color: #EDB668;
+}
+
+#abstrak p {
+    font-size: 1.2rem;
+    color: #828282;
+    line-height: 160%;
+    text-align: justify;
+    align-items: flex-start;
+}
+
+#abstrak .dalil {
+    color: #6E5858;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+#abstrak .dalil span {
+    font-style: normal;
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: 'Amiri', serif;
+}
+
+#abstrak .ca {
+    color: #6E5858;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
 .section-1, .section-2, .section-3 {
     width: 80%;
     display: flex;
@@ -635,6 +813,130 @@ input {
     max-width: 50em;
 }
 
+/* Section Shalat */
+.section-shalat {
+    padding: 80px 0;
+}
+
+.section-shalat .heading-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 140%;
+    width: 100%;
+    gap: 24px;
+}
+
+.section-shalat .heading-text {
+    color: #585858;
+    width: 80%;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    /* 89.6px */
+    letter-spacing: -1.28px;
+    max-width: 1171px;
+}
+
+.section-shalat .heading-box button {
+    width: 15%;
+    height: 6vh;
+    background-color: #edb668;
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    /* 44.8px */
+    letter-spacing: -0.64px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.section-shalat .heading-box button:hover {
+    transform: scale(1.1125);
+}
+
+.section-shalat .shalat-box {
+    display: flex;    
+    justify-content: space-between;    
+    transition: all 1s;
+    padding: 0 120px;
+    gap: 20px;
+    height: auto;
+    /* grid-template-rows: 1fr; */
+}
+
+.section-shalat .shalat-box .arabic {
+    font-size: 2.25rem;
+    text-align: start;
+    margin: 0;
+}
+
+.section-shalat .shalat-desc {
+    color: #585858;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    text-align: justify;
+}
+
+.section-shalat .shalat-title {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 102%;
+    /* 65.28px */
+    letter-spacing: -1.28px;
+}
+
+.section-shalat .ayat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 20px; */
+}
+
+.section-shalat .arti {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 140%;
+    text-align: justify;
+}
+
+.section-shalat .shalat-text {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 140%;
+    /* letter-spacing: -0.48px; */
+}
+
+.section-shalat .shalat-img {
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.section-shalat .shalat-img img {
+    width: 100%;
+    height: auto;
+}
+
+.hide {
+    transform: scale(0.5);
+    margin-bottom: -550px;
+    opacity: 0;
+    z-index: -1;
+    position: relative;
+}
+
 .section-3 .makanan-title {
     height: 10vh;
     margin: 50px 0;
@@ -942,6 +1244,78 @@ footer .copyright span{
         font-weight: 800;
     }
 
+    /* Hero */
+    .hero-box {
+        flex-direction: column-reverse;
+        align-items: end;
+        justify-content: start;
+        gap: 30px;
+        margin: 60px 0;
+    }
+
+    .hero-box .hero-text {
+        padding-left: 3rem;
+    }
+
+    .hero-box .hero-img {
+        width: 100%;
+    }
+
+    .hero-box .hero-text {
+        width: 100%;
+        justify-content: start;
+        align-items: start;
+        gap: 15px;
+    }
+
+    .hero-box .hero-text .heading {
+        font-size: 12vw;
+    }
+
+    .hero-box .hero-text .desc {
+        text-align: justify;
+        font-size: 3vw;
+        width: 80%;
+    }
+
+    .hero-box .hero-img img {
+        width: 90%;
+        height: auto;
+    }
+
+    .hero-box .hero-text button {
+        font-size: 3vw;
+    }
+
+    /* Abstrak */
+    #abstrak {
+        padding: 10vw 2vw;
+    }
+
+    #abstrak .judul {
+        font-size: 2rem;
+        line-height: 100%;
+    }
+
+    #abstrak p {
+        font-size: 1rem;
+    }
+
+    #abstrak .top,
+    #abstrak .bottom {
+        width: 100%;
+        flex-direction: column;
+        gap: 4.375rem;
+    }
+
+    #abstrak .bottom {
+        flex-direction: column-reverse;
+    }
+
+    #abstrak img {
+        width: 100%;
+    }
+
     .content {
         flex-direction: column;
     }
@@ -1077,6 +1451,52 @@ footer .copyright span{
     .section-1 .content{
         justify-content: space-between;
         gap: 10px;
+    }
+
+    /* Section Shalat */
+    .section-shalat .heading-text {
+        width: 85%;
+        line-height: 110%;
+        font-size: 3rem;
+    }
+
+    .section-shalat .heading-box button {
+        width: 70%;
+        background-color: #edb668;
+        color: #ffffff;
+        font-size: 25px;
+        border: none;
+        border-radius: 3px;
+    }    
+
+    .section-shalat .shalat-box {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 0 40px;
+        margin-top: 40px;
+    }
+
+    .section-shalat .shalat-desc {
+        color: #585858;
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .section-shalat .shalat-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .section-shalat .arabic {
+        font-size: 32px;
+    }
+
+    .hide {
+        margin-bottom: -65em;             
     }
 
     .section-3 .makanan {

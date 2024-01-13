@@ -34,8 +34,8 @@ body {
   /* padding: 120px 10vw; */
 }
 
-.top,
-.bottom {
+#abstrak .top,
+#abstrak .bottom {
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -56,8 +56,8 @@ body {
   max-width: 553px;
 }
 
-.right .judul span,
-.left .judul span {
+#abstrak .right .judul span,
+#abstrak .left .judul span {
   color: #EDB668;
 }
 
@@ -78,24 +78,19 @@ body {
   text-align: justify;
 }
 
-.dalil span {
+#abstrak .dalil span {
   font-style: normal;
   font-size: 1.7rem;
   font-weight: 700;
   font-family: 'Amiri', serif;
 }
 
-.ca {
+#abstrak .ca {
   color: #6E5858;
   font-family: Poppins;
   font-size: 2rem;
   font-style: italic;
   font-weight: 600;
-}
-
-.abstrak img {
-  width: 100%;
-  height: auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -113,18 +108,18 @@ body {
     font-size: 1rem;
   }
 
-  .top,
-  .bottom {
+  #abstrak .top,
+  #abstrak .bottom {
     width: 100%;
     flex-direction: column;
     gap: 4.375rem;
   }
 
-  .bottom {
+  #abstrak .bottom {
     flex-direction: column-reverse;
   }
 
-  img {
+  #abstrak img {
     width: 100%;
   }
 }
