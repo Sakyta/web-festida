@@ -280,7 +280,7 @@ nav h1 span{
     align-items: center;
     flex-direction: column;
     transition: all 1s;    
-    margin: 10em 0;
+    /* margin: 10em 0; */
     padding: 2.5rem;
 }
 
@@ -291,6 +291,7 @@ nav h1 span{
     align-items: center;
     background-color: white;
     width: 100%;
+    padding: 2rem 0 15rem 0;
 }
 
 .content {
@@ -610,8 +611,13 @@ input {
     font-size: 64px;
     font-weight: 600;    
     align-items: start;
-    max-width: 3em;
+    max-width: 4em;
     line-height: 92%;
+    padding-top: 3rem;
+}
+
+.heading-left{
+    text-align: start;
 }
 
 .heading span{
@@ -955,6 +961,7 @@ input {
     justify-content: center;
     align-items: center;
     gap: 10vh;
+    margin-bottom: 20vh;
 }
 
 .section-3 .card {
@@ -1178,15 +1185,24 @@ footer .copyright span{
 }
 
 .strong-quote {
-    padding: 70px 135px;
+    padding: 70px 0;
     color: #585858;
-    text-align: center;    
+    text-align: center;  
     font-size: 64px;    
     font-weight: 300;
     line-height: 140%;
     letter-spacing: -1.28px;
     width: 100vw;
     background-color: #FFF3E2;
+}
+
+.strong-quote span{
+    color: var(--brown);
+}
+
+.strong-quote p{
+    max-width: 1171px;
+    margin: 0 auto;
 }
 
 /* Animasi Pop-Up */
@@ -1225,6 +1241,11 @@ footer .copyright span{
 
 .showcase .card:nth-child(3) {
     transition-delay: 500ms;
+}
+
+.quotes-fisik{
+    padding: 5rem 0;
+    max-width: 500px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1324,8 +1345,16 @@ footer .copyright span{
         font-size: 3rem;
     }
 
+    .heading-left{
+        text-align: start;
+    }
+
     .heading-2, .makanan-title{
         font-size: 2rem;
+    }
+
+    .s4-wrapper{
+        padding: 0;
     }
     
     .section-4 .quotes {
@@ -1401,6 +1430,10 @@ footer .copyright span{
         padding: 0;
     }
 
+    .heading-2 + .kutipan .arabic {
+        font-size: 1.7rem;
+    }
+
     .section-2 .quote-box .content {
         width: auto;
         min-width: 0;
@@ -1444,8 +1477,9 @@ footer .copyright span{
     }
 
     .poin .content .arabic {
-        margin: 0;
+        margin: 10px 0;
         text-align: justify;
+        font-size: 1.7rem;
     }
 
     .section-1 .content{
@@ -1504,6 +1538,7 @@ footer .copyright span{
         flex-direction: column;
         align-items: center;
         gap: 10vh;
+        margin-bottom: 10vh;
     }
 
     .section-3 .makanan-title{
@@ -1611,6 +1646,7 @@ footer .copyright span{
 
     .section-1, .section-2, .section-3, .section-4{
         margin: 40px 0;
+        gap: 45px;
     }
 
     @keyframes trans-left {
