@@ -407,7 +407,7 @@ nav h1 span{
 }
 
 .quotes {
-    font-size: 48px;
+    font-size: 4rem;
     text-align: center;
     font-weight: 300;
     max-width: 20em;
@@ -1246,7 +1246,7 @@ footer .copyright span{
 
 .quotes-fisik{
     padding: 5rem 0;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1360,6 +1360,11 @@ footer .copyright span{
     
     .section-4 .quotes {
         font-size: 2rem;
+    }
+
+    .quotes-fisik, .section-1 .quotes{
+        font-size: 3rem;
+        padding: 4rem 0;
     }
 
     .sepenggal {
